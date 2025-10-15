@@ -3,13 +3,15 @@
 First install and source [lerobot](https://huggingface.co/docs/lerobot/en/installation).
 
 ```bash
-sudo apt-get install cmake build-essential python-dev pkg-config libavformat-dev libavcodec-dev libavdevice-dev libavutil-dev libswscale-dev libswresample-dev libavfilter-dev pkg-config virtualenv
+sudo apt-get install cmake build-essential python3-dev pkg-config libavformat-dev libavcodec-dev libavdevice-dev libavutil-dev libswscale-dev libswresample-dev libavfilter-dev pkg-config virtualenv
+
+git clone https://github.com/vicoslab/arm101.git
+cd arm101
 
 virtualenv .
 source bin/activate
 
-pip install lerobot
-pip install 'lerobot[feetech]'
+pip install lerobot 'lerobot[feetech]'
 ```
 
 ## UDEV Setup
